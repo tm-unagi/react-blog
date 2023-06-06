@@ -1,0 +1,37 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: lightsalmon;
+  gap: 45px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: cadetblue;
+}
+
+nav a svg button {
+  margin-right: 5px;
+}
+
+nav button {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+
+nav button:hover {
+  color: cadetblue;
+}

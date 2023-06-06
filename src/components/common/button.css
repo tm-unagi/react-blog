@@ -1,0 +1,44 @@
+.image-button {
+  width: 191px;
+  height: 46px;
+  background-size: auto 100% !important;
+  background-position: center;
+  background-origin: border-box;
+  background-repeat: no-repeat !important;
+  transition: transform 0.3s ease-in-out;
+  background: #fff;
+  border: none;
+  align-items: center;
+}
+
+.image-button:hover {
+  transform: scale(1.02);
+}
+
+.image-button:active {
+  transform: scale(0.9);
+}
+
+.cancel-button {
+  background: none;
+  border: none;
+  color: gray;
+  cursor: pointer;
+}
+
+.cancel-button:hover,
+.cancel-button:focus {
+  color: blue;
+}
+
+.cancel-button,
+.image-button {
+  display: block;
+}
+
+.button-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
