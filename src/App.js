@@ -15,14 +15,16 @@ function App() {
     <Router>
       <header>
         <Navbar isAuth={isAuth} setIsAuth={setIsAuth} />
-        <Sidebar />
       </header>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/createpost" element={<CreatePost isAuth={isAuth} />}></Route>
-        <Route path="/logout" element={<Logout setIsAuth={setIsAuth} />}></Route>
-        <Route path="/confirmdelete/:id" element={<ConfirmDelete isAuth={isAuth} />}></Route>
-      </Routes>
+      <div className="mainContent">
+        <Sidebar />
+        <Routes className="routes">
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/createpost" element={<CreatePost isAuth={isAuth} />}></Route>
+          <Route path="/logout" element={<Logout setIsAuth={setIsAuth} />}></Route>
+          <Route path="/confirmdelete/:id" element={<ConfirmDelete isAuth={isAuth} />}></Route>
+        </Routes>
+      </div>
     </Router>
   );
 }

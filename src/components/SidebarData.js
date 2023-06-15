@@ -11,7 +11,7 @@ export const SidebarData = [
   {
     title: 'ホーム',
     icon: <HomeIcon />,
-    link: '/home',
+    link: '/',
   },
   {
     title: 'メール',
