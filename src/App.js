@@ -7,12 +7,16 @@ import Logout from './components/Logout';
 import Navbar from './components/Navbar';
 import { useState } from 'react';
 import ConfirmDelete from './components/ConfirmDelete';
+import Sidebar from './components/Sidebar';
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
   return (
     <Router>
-      <Navbar isAuth={isAuth} setIsAuth={setIsAuth} />
+      <header>
+        <Navbar isAuth={isAuth} setIsAuth={setIsAuth} />
+        <Sidebar />
+      </header>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/createpost" element={<CreatePost isAuth={isAuth} />}></Route>
